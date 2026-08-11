@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BloomAir 🌸</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Camera -->
+    <video id="video" autoplay playsinline></video>
+
+    <!-- Drawing canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- UI -->
+    <div class="overlay">
+
+        <header>
+            <div>
+                <h1>Bloom<span>Air</span></h1>
+                <p>Gesture Controlled Flower Garden</p>
+            </div>
+
+            <div class="status">
+                <span id="statusDot"></span>
+                <span id="statusText">Starting camera...</span>
+            </div>
+        </header>
+
+
+        <div class="instructions">
+
+            <div class="instruction">
+                <span>☝️</span>
+                <div>
+                    <strong>Draw</strong>
+                    <small>Move your index finger</small>
+                </div>
+            </div>
+
+            <div class="instruction">
+                <span>✊</span>
+                <div>
+                    <strong>BOOM</strong>
+                    <small>Make a fist</small>
+                </div>
+            </div>
+
+            <div class="instruction">
+                <span>🖐️</span>
+                <div>
+                    <strong>Bloom</strong>
+                    <small>Open your hand</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="controls">
+
+            <button id="clearBtn">
+                <span>↻</span>
+                Clear Garden
+            </button>
+
+            <div class="flower-count">
+                🌸 <span id="flowerCount">0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MediaPipe -->
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
